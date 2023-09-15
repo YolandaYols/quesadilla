@@ -19,7 +19,10 @@ public class Listnum {
      * @return Cada componente será una fracción de la cadena otorgada
      */
     public String list(String accommodate) {
-        String newOration = accommodate.replace("-", " ").replace("(", " ").replace(")", " ").replace(" ", "");
+        String newOration = accommodate.replace("-", " ")
+                .replace("(", " ")
+                .replace(")", " ")
+                .replace(" ", "");
         System.out.println(newOration);
         return newOration;
     }
@@ -60,6 +63,12 @@ public class Listnum {
         for (String nums : num) {
             if (nums.startsWith(guaymas)) {
                 guayma++;
+            }
+        }
+        
+         for (String nums : num) {
+            if (nums.startsWith(guaymas)) {
+                Unknown++;
             }
         }
 
